@@ -3,7 +3,7 @@ This Repository consists of the training and main chatbot.ipynb files which MUST
 
 RUN DOWNLOAD AND RUN ONLY THE .ipynb FILES IN JUPYTERLAB , OTHERWISE THE VOICE PART WILL NOT WORK.
 
-BELOW I AM MENIONING ALL THE NECESSARY MODULES TO BE INSTALLED IN JUPYTERLAB IN BOTH chatbot.ipynb and training.ipynb TO MAKE IT WORK AS EXPECTED.
+BELOW I AM MENITONING ALL THE NECESSARY MODULES TO BE INSTALLED IN JUPYTERLAB IN BOTH chatbot.ipynb and training.ipynb TO MAKE IT WORK AS EXPECTED.
 
 pip install tensorflow 
 pip install pickle 
