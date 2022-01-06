@@ -5,9 +5,9 @@ RUN DOWNLOAD AND RUN ONLY THE .ipynb FILES IN JUPYTERLAB , OTHERWISE THE VOICE P
 
 BELOW I AM MENIONING ALL THE NECESSARY MODULES TO BE INSTALLED IN JUPYTERLAB IN BOTH chatbot.ipynb and training.ipynb TO MAKE IT WORK AS EXPECTED.
 
-pip install tensorflow \n
-pip install pickle \n
-pip install pickle json \n
+pip install tensorflow 
+pip install pickle 
+pip install pickle json 
 pip install nltk
 pip install nltk.punkt # if there is an error
 pip install nltk.wordnet # same as punkt
