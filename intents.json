@@ -251,6 +251,96 @@
     "patterns" : ["sudden fever","dry cough","chesty cough","chills","aching muscles","sore throat"],
     "responses" : ["According to your symptoms you might have Flu","You have Flu","I suppose you have Flu"]
   },
+  {
+    "tag" : "Fetal alcohol spectrum disorder",
+    "patterns" : ["hyperactivity","impulsivity","sensory difficulties","attention deficiency"],
+    "responses" : ["According to your symptoms you might have Fetal alcohol spectrum disorder","You have Fetal alcohol spectrum disorder","I suppose you have Fetal alcohol spectrum disorder"]
+  },
+  {
+    "tag" : "Food poisoning",
+    "patterns" : ["nausea","diarrhoea","abdominal pain","chills","aching muscles","fever","stomach cramps","vomiting"],
+    "responses" : ["According to your symptoms you might have Food poisoning","You have Food poisoning","I suppose you have Food poisoning"]
+  },
+  {
+    "tag" : "Fungal nail infection",
+    "patterns" : ["discolouration of the nail","brittle nails","crumbly nails","distorted nails"],
+    "responses" : ["According to your symptoms you might have Fungal nail infection","You have Fungal nail infection","I suppose you have Fungal nail infection"]
+  },
+  {
+    "tag" : "Gallbladder cancer",
+    "patterns" : ["abdominal pain","stomach pain","jaundice","loss of appetite","swollen stomach","weight loss"],
+    "responses" : ["According to your symptoms you might have Gallbladder cancer","You have Gallbladder cancer","I suppose you have Gallbladder cancer"]
+  },
+  {
+    "tag" : "Gallstones",
+    "patterns" : ["jaundice","persistent abdominal pain","fever"],
+    "responses" : ["According to your symptoms you might have Gallstones","You have Gallstones","I suppose you have Gallstones"]
+  },
+  {
+    "tag" : "Ganglion cyst",
+    "patterns" : ["joint pain","cysts in wrist","swelling"],
+    "responses" : ["According to your symptoms you might have Ganglion cyst","You have Ganglion cyst","I suppose you have Ganglion cyst"]
+  },
+  {
+    "tag" : "Gastroenteritis",
+    "patterns" : ["diarrhoea","vomiting","mild fever","aching limbs","headache","upset stomach","loss of appetite"],
+    "responses" : ["According to your symptoms you might have Gastroenteritis","You have Gastroenteritis","I suppose you have Gastroenteritis"]
+  },
+  {
+    "tag" : "Gastro-oesophageal reflux disease (GORD)",
+    "patterns" : ["heartburn","bad breath","belching","acid reflux","pain when swallowing"],
+    "responses" : ["According to your symptoms you might have Gastro-oesophageal reflux disease (GORD)","You have Gastro-oesophageal reflux disease (GORD)","I suppose you have Gastro-oesophageal reflux disease (GORD)"]
+  },
+  {
+    "tag" : "Genital herpes",
+    "patterns" : ["pain peeing","genital pain","swelling in groin","blisters","vaginal discharge","rectal pain"],
+    "responses" : ["According to your symptoms you might have Genital herpes","You have Genital herpes","I suppose you have Genital herpes"]
+  },
+  {
+    "tag" : "Genital warts",
+    "patterns" : ["lumps around genitals","warts","vaginal outgrowth","lumps around penis"],
+    "responses" : ["According to your symptoms you might have Genital warts","You have Genital warts","I suppose you have Genital warts"]
+  },
+  {
+    "tag" : "Germ cell tumours",
+    "patterns" : ["lump","olk-sac tumours"],
+    "responses" : ["According to your symptoms you might have Germ cell tumours","You have Germ cell tumours","I suppose you have Germ cell tumours"]
+  },
+  {
+    "tag" : "Glandular fever",
+    "patterns" : ["fever","swollen glands","sore throat","fatigue","extreme tiredness"],
+    "responses" : ["According to your symptoms you might have Glandular fever","You have Glandular fever","I suppose you have Glandular fever"]
+  },
+  {
+    "tag" : "Gonorrhoea",
+    "patterns" : ["pain while urinating","pain in lower abdomen","bleeding after sex","swelling of the testicles","yellow fluid discharge","increased vaginal discharge"],
+    "responses" : ["According to your symptoms you might have Gonorrhoea","You have Gonorrhoea","I suppose you have Gonorrhoea"]
+  },
+  {
+    "tag" : "Gout",
+    "patterns" : ["joint pain","shiny skin over joints","swelling of joints","tender joints"],
+    "responses" : ["According to your symptoms you might have Gout","You have Gout","I suppose you have Gout"]
+  },
+  {
+    "tag" : "Gum disease",
+    "patterns" : ["bad breath","bleeding in gums","swelling in gums","sore gums","bleeding while brushing"],
+    "responses" : ["According to your symptoms you might have Gum disease","You have Gum disease","I suppose you have Gum disease"]
+  },
+  {
+    "tag" : "Haemorrhoids (piles)",
+    "patterns" : ["mucus discharge after passing a stool","itchy bottom","bleeding after defecating","soreness in anus","swelling around anus","redness around anus"],
+    "responses" : ["According to your symptoms you might have Haemorrhoids (piles)","You have Haemorrhoids (piles)","I suppose you have Haemorrhoids (piles)"]
+  },
+  {
+    "tag" : "Gallstones",
+    "patterns" : [""],
+    "responses" : ["According to your symptoms you might have Gallstones","You have Gallstones","I suppose you have Gallstones"]
+  },
+  {
+    "tag" : "Gallstones",
+    "patterns" : [""],
+    "responses" : ["According to your symptoms you might have Gallstones","You have Gallstones","I suppose you have Gallstones"]
+  },
  
 
 
