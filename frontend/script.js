@@ -303,9 +303,9 @@ async function chatbotResponse() {
         })
 }
 
-async function newEntry() {
-    if (document.getElementById("chatbox").value != "") {
-        lastUserMessage = document.getElementById("chatbox").value;
+async function newEntry(mssg, val) {
+    if (document.getElementById("chatbox").value != "" || val) {
+        lastUserMessage = mssg;
         document.getElementById("chatbox").value = "";
         messages.push(lastUserMessage);
         await chatbotResponse();
@@ -332,7 +332,7 @@ function keyPress(e) {
     var x = e || window.event;
     var key = (x.keyCode || x.which);
     if (key == 13 || key == 3) {
-        newEntry();
+        newEntry(document.getElementById("chatbox").value, false);
     }
     if (key == 38) {
         console.log('hi')
@@ -342,3 +342,24 @@ function keyPress(e) {
 function placeHolder() {
     document.getElementById("chatbox").placeholder = "";
 }
+
+const GetSpeech = () => {
+  console.log("clicked microphone");
+  const SpeechRecognition =  window.SpeechRecognition || window.webkitSpeechRecognition;
+ 
+  let recognition = new SpeechRecognition();
+recognition.onstart = () => {
+          console.log("starting listening, speak in microphone");
+      }
+      recognition.onspeechend = () => {
+          console.log("stopped listening");
+          recognition.stop();
+      }
+      recognition.onresult = (result) => {
+          newEntry(`${result.results[0][0].transcript}`, true)
+          console.log(result.results[0][0].transcript);
+       }
+   
+       recognition.start();
+}
+
