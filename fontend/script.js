@@ -277,7 +277,6 @@ const ENDPOINT = "http://127.0.0.1:5000/predict?symptoms="
 var messages = [], //array that hold the record of each string in chat
     lastUserMessage = "", //keeps track of the most recent input string from the user
     botMessage = "", //var keeps track of what the chatbot is going to say
-    botName = 'Chatbot', //name of the chatbot
     talking = true; //when false the speech function doesn't work
 
 
@@ -303,17 +302,18 @@ async function chatbotResponse() {
         })
 }
 
-async function newEntry() {
-    if (document.getElementById("chatbox").value != "") {
-        lastUserMessage = document.getElementById("chatbox").value;
+async function newEntry(mssg, val) {
+    if (document.getElementById("chatbox").value != "" || val) {
+        lastUserMessage = mssg;
         document.getElementById("chatbox").value = "";
         messages.push(lastUserMessage);
         await chatbotResponse();
         await new Promise(r => setTimeout(r, 300));
-        messages.push("<b>" + botName + ":</b> " + botMessage);
+        messages.push(botMessage);
         Speech(botMessage);
         for (var i = 1; i < 8; i++) {
         if (messages[messages.length - i])
+            document.getElementById("chat-bubble" + i).style.visibility = "visible"
             document.getElementById("chatlog" + i).innerHTML = messages[messages.length - i];
         }
     }
@@ -332,13 +332,38 @@ function keyPress(e) {
     var x = e || window.event;
     var key = (x.keyCode || x.which);
     if (key == 13 || key == 3) {
-        newEntry();
+        newEntry(document.getElementById("chatbox").value, false);
     }
-    if (key == 38) {
-        console.log('hi')
-    }
+}
+
+function enter()
+{
+  newEntry(document.getElementById("chatbox").value, false);
 }
 
 function placeHolder() {
     document.getElementById("chatbox").placeholder = "";
 }
+
+const GetSpeech = () => {
+  console.log("clicked microphone");
+  const SpeechRecognition =  window.SpeechRecognition || window.webkitSpeechRecognition;
+ 
+  let recognition = new SpeechRecognition();
+recognition.onstart = () => {
+          document.getElementById('mic').style.background = 'lightblue';
+          console.log("starting listening, speak in microphone");
+      }
+      recognition.onspeechend = () => {
+          document.getElementById('mic').style.background = 'white';
+          console.log("stopped listening");
+          recognition.stop();
+      }
+      recognition.onresult = (result) => {
+          newEntry(`${result.results[0][0].transcript}`, true)
+          console.log(result.results[0][0].transcript);
+       }
+   
+       recognition.start();
+}
+
