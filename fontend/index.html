@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com/3.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+    <script src="./script.js"></script>
+    <title>Bagley</title>
+</head>
+<body>
+    <div class="flex justify-center items-center bg-gray-500 min-h-screen">
+        <div class="card h-[470px] w-[330px] overflow-hidden md:w-[780px] lg:w-[900px] bg-white rounded-lg">
+            <div class="form flex h-full w-full">
+                <div class="left-side w-2/5 h-full bg-blue-700">
+                    <p class="text-center mt-5 text-2xl font-semibold text-white">Tele-Healthcare</p>
+                    <div class="flex justify-center items-center mt-6"> <span class="h-26 w-32 overflow-hidden rounded-full object-cover"><img class="object-cover" src="./icon.jpeg"></span> </div>
+                    <div class="mt-8 relative px-3"> <input type="text" class="h-16 w-full px-2 outline-none rounded-lg border-0"> <span class="absolute left-5 text-gray-500 top-0 font-semibold">Username</span> </div>
+                    <div class="mt-9 relative px-3"> <select class="h-16 cursor-pointer font-semibold w-full px-2 outline-none rounded-lg border-0 top-6">
+                            <option class="bg-white hidden">Online</option>
+                            <option>Online</option>
+                            <option>Offline</option>
+                        </select> <span class="absolute left-5 text-gray-500 top-0 font-semibold">Status</span> </div>
+                    <a href="https://github.com/Dwaipayan001/AI-HealthCareChatBot-With-Voice" class="mt-10 h-16 px-3 bg-blue-300 flex justify-center items-center text-xl gap-16"> 
+                        <img class="hover:text-yellow-500 cursor-pointer fa fa-user-o" src="./github.png" height=10% width=10%></img> 
+                    </a>
+                </div>
+                <div class="right_side w-3/5 h-full bg-gray-200">
+                    <div class="h-20 bg-white flex items-center gap-4 "> <span class=" ml-3 h-12 w-12 flex overflow-hidden rounded-full "><img src="./icon.jpeg" height=100% width=100%></span>
+                        <p class="text-center text-2xl font-semibold">Bagley</p>
+                    </div>
+
+
+                    <div id="chat-bubble3" class="mt-4 px-3 flex justify-end items-center gap-3 bubble"> 
+                        <span id="chatlog3" class="px-2 h-10 justify-center items-center text-sm rounded-tr-xl	rounded-tl-xl rounded-bl-xl pl-4 pr-4 flex bg-blue-600 text-white">&nbsp;</span>
+                    </div>
+
+                    <div id="chat-bubble4" class="mt-4 px-3 flex items-center gap-3 bubble"> 
+                        <span id="chatlog4" class="h-10 justify-center items-center text-sm rounded-tr-xl	rounded-tl-xl rounded-br-xl pl-4 pr-4 flex bg-white">&nbsp;</span>
+                    </div>
+
+                    <div id="chat-bubble2" class="mt-4 px-3 flex justify-end items-center gap-3 bubble"> 
+                        <span id="chatlog2" class="px-2 h-10 justify-center items-center text-sm rounded-tr-xl	rounded-tl-xl rounded-bl-xl pl-4 pr-4 flex bg-blue-600 text-white">&nbsp;</span>
+                    </div>
+
+                    <div id="chat-bubble1" class="mt-4 px-3 flex items-center gap-3 bubble"> 
+                        <span id="chatlog1" class="h-10 justify-center items-center text-sm rounded-tr-xl rounded-tl-xl rounded-br-xl	pl-4 pr-4 flex bg-white">&nbsp;</span>
+                    </div>
+
+                    <div class="mt-[104px] h-16 px-3 bg-white flex justify-center items-center gap-3 text-xl"> 
+                        <button id="mic" onclick="GetSpeech()">🎤</button>
+                        <input placeholder="Hi there! Type here to talk to me!" type="text" class="h-10 -mt-1 w-full text-sm  px-2 outline-none rounded-lg border" id="chatbox">
+                        <button class="enter" onclick="enter()">⏎</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

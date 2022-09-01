@@ -1,0 +1,13 @@
+@media(max-width:750px){.card{width:330px}.left-side{display:none}.right_side{width:100% !important}}
+
+.bubble
+{
+    visibility: hidden;
+}
+
+#mic
+{
+    padding: 2%;
+    border-radius: 20%;
+    box-shadow: 2px;
+}
